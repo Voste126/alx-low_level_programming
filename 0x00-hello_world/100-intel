@@ -1,2 +1,2 @@
-#!bin/bash
+ #!/bin/bash
 gcc -S main.c $(basename $CFILE .c).c | sed 's/\.c$/.s/' > $(basename $CFILE .c).s
