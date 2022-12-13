@@ -1,37 +1,27 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
-
-using namespace std;
-/*
- *betty style doc for function main goes there
- *main - Entry point
- * Return: Value 0
+/**
+ * main - prints if the number is a positive,negative or 0
+ *
+ * Return: Always 0 (success)
  */
+
 int main(void)
 {
-/*Seed the random number generator with the current time*/
+int n;
 srand(time(0));
+n = rand() - RAND_MAX / 2;
 
-/* Generate a random number and store it in the variable n*/
-int n = rand() % RAND_MAX;
-
-/*Print the number*/
-cout << "The number is " << n << ": ";
-
-/* Check if the number is positive, zero, or negative, and print the result*/
 if (n > 0)
 {
-cout << "is positive" << endl;
+	printf("%d is positive\n", n);
 }
 else if (n == 0)
 {
-cout << "is zero" << endl;
+	printf("%d is zero\n", n);
 }
 else
-{
-cout << "is negative" << endl;
-}
-
+printf("%d is negative\n", n);
 return (0);
 }
