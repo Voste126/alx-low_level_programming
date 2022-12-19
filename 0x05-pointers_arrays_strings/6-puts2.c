@@ -12,9 +12,5 @@ for (i = 0; str[i] != '\0'; i += 2)
 {
 putchar(str[i]);
 }
-if (i % 2 != 0)
-{
-putchar(str[i - 1]);
-}
 putchar('\n');
 }
