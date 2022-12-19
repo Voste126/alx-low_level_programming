@@ -10,9 +10,14 @@ void puts2(char *str)
 {
 	int i;
 
-for (i = 0; str[i] != '\0'; i += 2)
-{
-putchar(str[i]);
-}
-putchar('\n');
+	i = 0;
+	while (str[i] != '\0')
+	{
+		if (i % 2 == 0)
+		{
+			putchar(str[i]);
+		}
+		i++;
+	}
+	putchar('\n');
 }
