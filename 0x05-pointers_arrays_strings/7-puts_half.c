@@ -11,7 +11,7 @@ int length = strlen(str);
 int start = (length - 1) / 2;
 int i;
 
-if (length % 2 == 0)
+if (length % 2 == 1)
 {
 start++;
 }
